@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Мария Баранова](https://up.htmlacademy.ru/adaptive/17/user/1057667).
-* Наставник: `Неизвестно`.
+* Наставник: `Дарья Глаголь`.
 
 ---
 
