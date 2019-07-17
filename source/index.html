@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="header">
-      <a href ="index.html" title="Главная"><img class="logo header__logo" src="image.svg" alt="Магазин вязаных штук" width="90" height="40"></a>
-      <nav class="main-navigaton header__navigation">
-        <button class="main-navigaton__toggle heade__toggle"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-navigaton__wrapper">
+      <a title="Главная"><img class="logo header__logo" src="image.svg" alt="Магазин вязаных штук" width="90" height="40"></a>
+      <div class="main-navigaton header__navigation">
+        <button class="main-navigaton__toggle heade__toggle" aria-label="Открыть меню" ></button>
+        <nav class="main-navigaton__wrapper">
           <ul class="main-navigaton__list">
             <li class="main-navigation__item"><a href="catalog.html" class="main-navigation__link" title="Каталог товаров">Каталог товаров</a></li>
             <li class="main-navigation__item"><a href="order.html" class="main-navigation__link"  title="Вязание на заказ">Вязание на заказ</a></li>
@@ -18,8 +18,8 @@
             <li class="main-user__list"><a href="search.html" class="main-user__search" title="">Поиск по сайту</a></li>
             <li  class="main-user__list"><a href="cart.html" class="main-user__cart small-cart" title="">Корзина: пока пуста</a></li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main class="main-page">
       <h1 class="h1-header main-page__header">Милые штучки для дома</h1>
@@ -52,7 +52,9 @@
               </tr>
             </tbody>
           </table>
-          <img src="item-image.jpg" class="hits-item__image" alt="Вязаные корзинки" width="260" height="315">
+          <a href="#" title="Вязаные корзинки">
+            <img src="item-image.jpg" class="hits-item__image" alt="Вязаные корзинки" width="260" height="315">
+          </a>
           <p class="hits-item__price">990 р.</p>
           <button class="button hits-item__button" type="button">Заказать</button>
         </div>
@@ -99,18 +101,18 @@
         <div class="contacts__map">
           <img src="map.jpg" class="contacts__map-image" alt="Расположение магазина">
         </div>
-        <a href="contactform.html" class="button contacts__button" title="Напишите нам">Напишите нам</a>
+        <a href="contact-form.html" class="button contacts__button" title="Напишите нам">Напишите нам</a>
       </section>
     </main>
     <footer class="footer">
       <ul class="social-footer">
-        <li class="social__item"><a href="instagram" title="Присоединяйтесь к нам в Инстаграм"><span class="visually-hidden">Присоединяйтесь к нам в Инстаграм</span></a></li>
-        <li class="social__item"><a href="facebook" title="Присоединяйтесь к нам в Facebook"><span class="visually-hidden">Присоединяйтесь к нам в Facebook</span></a></li>
-        <li class="social__item"><a href="twitter" title="Присоединяйтесь к нам в Twitter"><span class="visually-hidden">Присоединяйтесь к нам в Twitter</span></a></li>
+        <li class="social__item"><a href="#" title="Присоединяйтесь к нам в Инстаграм"><span class="visually-hidden">Присоединяйтесь к нам в Инстаграм</span></a></li>
+        <li class="social__item"><a href="#" title="Присоединяйтесь к нам в Facebook"><span class="visually-hidden">Присоединяйтесь к нам в Facebook</span></a></li>
+        <li class="social__item"><a href="#" title="Присоединяйтесь к нам в Twitter"><span class="visually-hidden">Присоединяйтесь к нам в Twitter</span></a></li>
       </ul>
       <div class="created">
         <p class="created__text">Разработано</p>
-        <a href="https://htmlacademy.ru" title="https://htmlacademy.ru"><img class="created__logo logo" src="logo.svg" alt="Разработано в HTML Academy" width="40" height="30"></a>
+        <a href="https://up.htmlacademy.ru/adaptive/17/project/mishka#mishka-3-10" title="https://htmlacademy.ru"><img class="created__logo logo" src="logo.svg" alt="Разработано в HTML Academy" width="40" height="30"></a>
       </div>
     </footer>
   </body>
