@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <a href ="index.html" title="Главная"><img class="logo header__logo" src="image.svg" alt="Магазин вязаных штук" width="90" height="40"></a>
+      <a title="Главная" href="index.html" class="logo header__logo"><img src="img/logo-mobile.svg" alt="Магазин вязаных штук" width="90" height="40"></a>
       <div class="main-navigation header__navigation">
-        <button class="main-navigation__toggle header__toggle" aria-label="Открыть меню" ></button>
+        <button class="main-navigation__toggle header__toggle" aria-label="Открыть меню" >
+          <span class="main-navigation__toggle-inside"></span>
+        </button>
         <nav class="main-navigation__wrapper">
           <ul class="main-navigation__list">
             <li class="main-navigation__item"><a href="catalog.html" class="main-navigation__link" title="Каталог товаров">Каталог товаров</a></li>
@@ -69,7 +72,7 @@
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Доп</legend>
-            <textarea name="additional_info" rows="5" cols="33" class="form__textarea" placeholder="Опишите все ваши
+            <textarea name="additional_info" rows="5" cols="22" class="form__textarea" placeholder="Опишите все ваши
 пожелания к заказу">
             </textarea>
             <p class="form__remark">*Поля обязательны для заполнения</p>
@@ -80,13 +83,13 @@
     </main>
     <footer class="footer">
       <ul class="social footer__social">
-        <li class="social__item"><a href="#" title="Присоединяйтесь к нам в Инстаграм"><span class="visually-hidden">Присоединяйтесь к нам в Инстаграм</span></a></li>
-        <li class="social__item"><a href="#" title="Присоединяйтесь к нам в Facebook"><span class="visually-hidden">Присоединяйтесь к нам в Facebook</span></a></li>
-        <li class="social__item"><a href="#" title="Присоединяйтесь к нам в Twitter"><span class="visually-hidden">Присоединяйтесь к нам в Twitter</span></a></li>
+        <li class="social__item"><a href="#" title="Присоединяйтесь к нам в Инстаграм" class="social__link social__link--inst"><span class="visually-hidden">Присоединяйтесь к нам в Инстаграм</span></a></li>
+        <li class="social__item"><a href="#" title="Присоединяйтесь к нам в Facebook" class="social__link social__link--fb"><span class="visually-hidden">Присоединяйтесь к нам в Facebook</span></a></li>
+        <li class="social__item"><a href="#" title="Присоединяйтесь к нам в Twitter" class="social__link social__link--twitter"><span class="visually-hidden">Присоединяйтесь к нам в Twitter</span></a></li>
       </ul>
-      <div class="created">
+      <div class="created footer__created">
         <p class="created__text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" title="https://htmlacademy.ru"><img class="created__logo logo" src="logo.svg" alt="Разработано в HTML Academy"  width="40" height="30"></a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" title="https://htmlacademy.ru"><img class="created__logo logo" src="img/htmlacademy.svg" alt="Разработано в HTML Academy" width="40" height="30"></a>
       </div>
     </footer>
   </body>

@@ -1,0 +1,49 @@
+.how-block {
+  .container-mobile-paddings();
+}
+
+.how-block__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 26px;
+  padding-bottom: 33px;
+  border: 1px solid #ececec;
+}
+
+
+.how-block__header {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-left: 90px;
+  padding-right: 28px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color:#000000;
+  &::before {
+    content: "";
+    position:absolute;
+    top: 7px;
+    left: 37px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../../img/icon-video.svg);
+    background-repeat: no-repeat;
+
+  }
+}
+
+.how-block__text {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.how-block__button {
+  display: block;
+  padding-right: 24px;
+  padding-left: 24px;
+  vertical-align: middle;
+  align-self: center;
+}

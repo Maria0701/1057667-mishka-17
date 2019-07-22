@@ -1,0 +1,65 @@
+.advantages {
+  .container-mobile-paddings();
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: @bg-white;
+  background-image: url(../../img/bg-zigzag-line.svg);
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+.advantages__name {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.advantages__list {
+  .nolist();
+}
+
+.advantages__item {
+  position:relative;
+  flex-basis: 260px;
+  margin-bottom:30px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+  &::before {
+    content: "";
+    display:block;
+    margin-bottom: 20px;
+    width: 60px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-color: @bg-white;
+  }
+}
+
+.advantages__item--ekology::before {
+ background-image: url(../../img/icon-feature-flower.svg);
+}
+
+.advantages__item--scand::before {
+  background-image: url(../../img/icon-feature-money.svg);
+}
+
+.advantages__item--likes::before {
+  background-image: url(../../img/icon-feature-heart.svg);
+}
+
+.advantages__item--handmade::before {
+  background-image: url(../../img/icon-feature-ball.svg);
+}
+
+.advantages__item--rus::before {
+  background-image: url(../../img/icon-feature-rocket.svg);
+}
+
+.advantages__item--present::before {
+  background-image: url(../../img/icon-feature-gift.svg);
+}
