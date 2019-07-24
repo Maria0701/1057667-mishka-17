@@ -7,7 +7,7 @@
   flex-direction: column;
   padding-top: 26px;
   padding-bottom: 33px;
-  border: 1px solid #ececec;
+  border: @border;
 }
 
 .how-block__header {
@@ -19,24 +19,28 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
-  color: #000000;
+  color: @black;
 
   &::before {
     content: "";
     position: absolute;
-    top: 7px;
-    left: 37px;
+    top: 4px;
+    left: 33px;
     display: block;
     width: 32px;
     height: 32px;
-    background-image: url("../../img/icon-video.svg");
+    background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
   }
 }
 
 .how-block__text {
-  padding-left: 28px;
-  padding-right: 28px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-left: 32px;
+  padding-right: 34px;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .how-block__button {
@@ -45,4 +49,15 @@
   padding-left: 24px;
   vertical-align: middle;
   align-self: center;
+}
+
+.how-block__video-responsive {
+  margin-top: 0;
+  margin-bottom: 25px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.how-block__video-responsive img {
+  display:block;
 }

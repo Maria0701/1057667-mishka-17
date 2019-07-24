@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -5,7 +15,7 @@ body {
   font-size: 15px;
   line-height: 25px;
   font-family: "Open Sans", "Arial", sans-serif;
-  color: #444444;
+  color: @text-color;
   font-style: normal;
 
   background-color: @bg-white;

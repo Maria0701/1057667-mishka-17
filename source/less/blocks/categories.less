@@ -14,13 +14,13 @@
   display: block;
   padding-left: 30px;
   padding-right: 160px;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
-  color: #ffffff;
-  background-color: #63d1bb;
+  color: @bg-white;
+  background-color: @decoration-1;
   text-decoration: none;
 
   &::before {
@@ -36,12 +36,12 @@
 }
 
 .categories__link--toys {
-  background-color: #56c3b2;
+  background-color: @decoration-2;
 
   &::before {
     content: "";
     position: absolute;
-    right: 30px;
+    right: 22px;
     top: 20px;
     display: block;
     width: 65px;
@@ -52,9 +52,10 @@
 }
 
 .categories__link--interior {
-  background-color: #63d1bb;
+  background-color: @decoration-1;
 
   &::before {
+    right: 13px;
     background-image: url("../img/icon-interior.svg");
   }
 }

@@ -1,14 +1,16 @@
 .feedback {
   .container-mobile-paddings();
   margin-bottom: 50px;
+  padding-top: 22px;
 }
 
 .feedback__name {
-  margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 26px;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
-  color: #000000;
+  color: @black;
   background-color: inherit;
 }
 
@@ -19,19 +21,19 @@
 
 .feedback__text {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .feedback__author {
   margin: 0;
   font-size: 17px;
   font-weight: bold;
-  color: #000000;
+  color: @black;
 }
 
 .feedback__tag {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 }
 
 .feedback__directions {
@@ -41,17 +43,17 @@
 
 .feedback__prev,
 .feedback__next {
-  flex-grow: 1;
+  flex-basis: 130px;
   height: 50px;
-  border: 1px solid #ececec;
+  border: @border;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .feedback__prev {
-  background-image: url("../../img/icon-left-arrow.svg");
+  background-image: url("../img/icon-left-arrow.svg");
 }
 
 .feedback__next {
-  background-image: url("../../img/icon-right-arrow.svg");
+  background-image: url("../img/icon-right-arrow.svg");
 }
