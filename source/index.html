@@ -27,41 +27,48 @@
       </div>
     </header>
     <main class="main-page">
-      <h1 class="h1-header main-page__header">Милые штучки ручной работы для дома</h1>
-      <section class="categories">
-        <h2 class="visually-hidden">Каталог товаров для дома</h2>
-        <ul class="categories__list">
-          <li class="categories__item"><a href="catalog/interior.html" class="categories__link  categories__link--interior" title="Предметы интерьера">Предметы интерьера</a></li>
-          <li class="categories__item"><a href="catalog/children.html" class="categories__link categories__link--toys" title="Детские игрушки">Детские игрушки</a></li>
-        </ul>
-      </section>
+      <div class="main-page__header-wrapper">
+        <h1 class="h1-header main-page__header">Милые штучки ручной работы для дома</h1>
+        <p class="main-page__remark">Бесплатная доставка по всей России</p>
+        <div class="categories">
+          <h2 class="visually-hidden">Каталог товаров для дома</h2>
+          <ul class="categories__list">
+            <li class="categories__item"><a href="catalog/interior.html" class="categories__link  categories__link--interior" title="Предметы интерьера">Предметы интерьера</a></li>
+            <li class="categories__item"><a href="catalog/children.html" class="categories__link categories__link--toys" title="Детские игрушки">Детские игрушки</a></li>
+          </ul>
+        </div>
+      </div>
       <section class="hits">
         <h2 class="visually-hidden">Самые популярные товары</h2>
         <div class="hits-item">
-          <h3 class="hits-item__name">Вязаные корзинки</h3>
-          <div class="hits-item__hit-remark">Товар недели</div>
-          <p class="hits-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="hits-item__properties">
-            <tbody>
-              <tr>
-                <td class="hits-item__property-name">Цвет:</td>
-                <td class="hits-item__property-value">"Тиффани"/серый</td>
-              </tr>
-              <tr>
-                <td class="hits-item__property-name">Диаметр:</td>
-                <td class="hits-item__property-value">25 см</td>
-              </tr>
-              <tr>
-                <td class="hits-item__property-name">Высота:</td>
-                <td class="hits-item__property-value">15 см</td>
-              </tr>
-            </tbody>
-          </table>
-          <a href="#" title="Вязаные корзинки" class="hits-item__image">
-            <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
-          </a>
-          <p class="hits-item__price">Цена: 990 руб.</p>
-          <button class="button hits-item__button" type="button">Заказать</button>
+          <div class="hits-item__name-wrapper">
+            <h3 class="hits-item__name">Вязаные корзинки</h3>
+            <div class="hits-item__hit-remark">Товар недели</div>
+          </div>
+          <div class="hits-item__details-wrapper">
+            <p class="hits-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="hits-item__properties">
+              <tbody>
+                <tr>
+                  <td class="hits-item__property-name">Цвет:</td>
+                  <td class="hits-item__property-value">"Тиффани"/серый</td>
+                </tr>
+                <tr>
+                  <td class="hits-item__property-name">Диаметр:</td>
+                  <td class="hits-item__property-value">25 см</td>
+                </tr>
+                <tr>
+                  <td class="hits-item__property-name">Высота:</td>
+                  <td class="hits-item__property-value">15 см</td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#" title="Вязаные корзинки" class="hits-item__image">
+              <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
+            </a>
+            <p class="hits-item__price">Цена: 990 руб.</p>
+            <button class="button hits-item__button" type="button">Заказать</button>
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -77,49 +84,62 @@
       </section>
       <section class="feedback">
         <h2 class="feedback__name">Отзывы </h2>
-        <ul class="feedback__list slider">
-          <li class="feedback__item slider__item">
-            <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <p class="feedback__author">Анастасия Красильникова</p>
-            <p class="feedback__tag">@misssssiskras</p>
-          </li>
-        </ul>
-        <div class="feedback__directions">
-          <button class="feedback__prev button" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
-          <button class="feedback__next button" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
+        <div class="feedback__wrapper">
+          <ul class="feedback__list slider">
+            <li class="feedback__item slider__item">
+              <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <p class="feedback__author">Анастасия Красильникова</p>
+              <p class="feedback__tag">@misssssiskras</p>
+            </li>
+          </ul>
+          <div class="feedback__directions">
+            <button class="feedback__prev button" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+            <button class="feedback__next button" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
+          </div>
         </div>
         <a class="button feedback__button" href="#">Написать</a>
       </section>
       <section class="contacts">
         <h2 class="contacts__name">Контакты</h2>
         <table class="contacts__table">
-          <tbody>
-            <tr>
+          <tbody class="contacts__table-body">
+            <tr class="contacts__row">
               <td class="contacts__cell contacts__cell--name">e-mail:</td>
               <td class="contacts__cell contacts__cell--value"><a href="mailto:info@mimimishkashop.ru" title="Напишите нам" class="contacts__email">info@mimimishkashop.ru</a></td>
             </tr>
-            <tr>
+            <tr class="contacts__row">
               <td class="contacts__cell contacts__cell--name">адрес:</td>
-              <td class="contacts__cell contacts__cell--value">г. Санкт-Петербург, <br> ул. Большая <br>Конюшенная, <br>д. 19/8, офис 101</td>
+              <td class="contacts__cell contacts__cell--value">г. Санкт-Петербург, <br> ул. Большая Конюшенная, <br>д. 19/8, офис 101</td>
             </tr>
           </tbody>
         </table>
         <div class="contacts__map">
           <img src="img/map-mobile@1x.jpg" class="contacts__map-image" alt="Расположение магазина" width="322" height="457">
         </div>
-        <a href="contact-form.html" class="button contacts__button" title="Напишите нам">Напишите нам</a>
+        <div class="contacts__button-wrapper">
+          <a href="contact-form.html" class="button contacts__button" title="Напишите нам">Напишите нам</a>
+        </div>
       </section>
     </main>
     <footer class="footer">
+      <a href="index.html" title="index" class="footer__logo">
+        <span class="visually-hidden">Логотип магазина Мишка</span>
+      </a>
       <ul class="social footer__social">
         <li class="social__item"><a href="#" title="Присоединяйтесь к нам в Инстаграм" class="social__link social__link--inst"><span class="visually-hidden">Присоединяйтесь к нам в Инстаграм</span></a></li>
-        <li class="social__item"><a href="#" title="Присоединяйтесь к нам в Facebook" class="social__link social__link--fb"><span class="visually-hidden">Присоединяйтесь к нам в Facebook</span></a></li>
+        <li class="social__item"><a href="#" title="Присоединяйтесь к нам в Facebook" class="social__link social__link--fb">
+          <span class="visually-hidden">Присоединяйтесь к нам в Facebook</span></a>
+        </li>
         <li class="social__item"><a href="#" title="Присоединяйтесь к нам в Twitter" class="social__link social__link--twitter"><span class="visually-hidden">Присоединяйтесь к нам в Twitter</span></a></li>
       </ul>
       <div class="created footer__created">
         <p class="created__text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" title="https://htmlacademy.ru"><img class="created__logo logo" src="img/htmlacademy.svg" alt="Разработано в HTML Academy" width="40" height="30"></a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" title="https://htmlacademy.ru" class="created__link">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <path class="created__logo" fill="#63d1bb" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+          </svg>
+        </a>
       </div>
     </footer>
   </body>

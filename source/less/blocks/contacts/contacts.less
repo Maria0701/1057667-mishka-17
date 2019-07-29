@@ -57,6 +57,23 @@
   }
 }
 
+.contacts__email:hover,
+.contacts__email:focus {
+  color: #46c1ae;
+
+  &:after {
+    background-color: #46c1ae;
+  }
+}
+
+.contacts__email:active {
+  color: #c7ece7;
+
+  &:after {
+    background-color: #c7ece7;
+  }
+}
+
 .contacts__map-image {
   margin-bottom: 42px;
   display: block;
@@ -86,4 +103,60 @@
   margin-top: 0;
   margin-bottom: 40px;
   letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+
+  .contacts {
+    padding-top: 85px;
+  }
+
+  .contacts__name {
+    position: relative;
+    margin-bottom: 36px;
+    .container-tablet-paddings();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 43px;
+    line-height: 50px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 51px;
+      height: 80px;
+      background-color: inherit;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .contacts__table{
+    margin-bottom: 55px;
+  }
+
+  .contacts__table-body {
+    .container-tablet-paddings();
+    display: flex;
+  }
+
+  .contacts__row {
+    width: 50%;
+    padding-right: 10px;
+  }
+
+  .contacts__cell:first-child {
+    padding-left: 0;
+  }
+
+  .contacts__button-wrapper {
+    text-align: center;
+  }
+
+  .contacts__button {
+    padding-right: 42px;
+    padding-left: 42px;
+    display: inline-block;
+  }
 }

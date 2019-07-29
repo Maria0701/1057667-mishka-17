@@ -1,9 +1,9 @@
 .header {
+  position: relative;
   display: flex;
   flex-direction: column;
   .container-mobile();
   .container-mobile-paddings();
-  position: relative;
   box-shadow: 0 1px 0 #ececec;
 }
 
@@ -23,4 +23,16 @@
   position: absolute;
   right: 30px;
   top: 30px;
+}
+
+@media (min-width: 768px) {
+
+  .header {
+    flex-direction: row;
+    .container-tablet-paddings();
+  }
+
+  .header__logo {
+    margin-left: 0;
+  }
 }
