@@ -58,7 +58,7 @@
   margin-left: -34px;
   margin-right: -34px;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -76,27 +76,24 @@
 
 .how-block__video-responsive:hover,
 .how-block__video-responsive:focus {
-
   &::before {
     transform: scale(1.2);
   }
 }
 
 .how-block__video-responsive:active {
-
   &::before {
     opacity: 0.3;
     transform: scale(0.8);
   }
 }
 
-.how-block__video-placeholder  {
+.how-block__video-placeholder {
   flex-grow: 1;
   display: block;
 }
 
 @media (min-width: 768px) {
-
   .how-block {
     .container-tablet-paddings();
   }
@@ -124,7 +121,7 @@
       left: 0;
       top: -5px;
       width: 34px;
-      height:34px;
+      height: 34px;
     }
   }
 

@@ -46,6 +46,7 @@
     border-top: @border;
   }
 }
+
 .main-navigation__list {
   .nolist();
 }
@@ -72,13 +73,11 @@
 }
 
 @media (min-width: 768px) {
-
   .main-navigation {
     display: flex;
   }
 
   .main-navigation__toggle {
-
     display:none;
   }
 
@@ -98,15 +97,16 @@
   }
 
   .main-navigation__item:first-child {
-    .main-navigation__link{
+    .main-navigation__link {
       padding-left: 0;
     }
   }
+
   .main-navigation__link {
     padding-top: 23px;
     padding-bottom: 23px;
     padding-right: 13px;
-    padding-left:13px;
+    padding-left: 13px;
     font-size: 15px;
     line-height: 24px;
     box-shadow: none;
