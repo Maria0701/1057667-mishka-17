@@ -4,6 +4,10 @@
   padding-bottom: 58px;
 }
 
+.inside-page__header-wrapper {
+  .container-mobile();
+}
+
 .inside-page__header {
   padding-top: 69px;
   padding-bottom: 78px;
@@ -15,11 +19,19 @@
   display: none;
 }
 
+.inside-page__header-background {
+  background-color: @bg-grey;
+}
+
 @media (min-width: 768px) {
   .inside-page__header {
     padding-top: 100px;
     padding-bottom: 89px;
     text-align: center;
+  }
+
+  .inside-page__header-wrapper {
+    position: relative;
   }
 
   .inside-page__remark {
@@ -31,4 +43,16 @@
     line-height: 24px;
     text-align: right;
   }
+}
+
+@media (min-width: 1150px) {
+  .inside-page__header-wrapper {
+    .container-desk();
+  }
+
+  .inside-page__header {
+    padding-top: 105px;
+    padding-bottom: 105px;
+  }
+
 }

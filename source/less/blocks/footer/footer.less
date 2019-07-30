@@ -1,8 +1,12 @@
 .footer {
+  background-color: @bg-grey;
+}
+
+.footer-wrapper {
+  .container-mobile();
   padding-top: 25px;
   padding-bottom: 22px;
   .container-mobile-paddings();
-  background-color: @bg-grey;
 }
 
 .footer__social {
@@ -19,7 +23,7 @@
 }
 
 @media (min-width: 768px) {
-  .footer {
+  .footer-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -50,5 +54,11 @@
     &:active {
       background-image: url("../img/logo-footer-active.svg");
     }
+  }
+}
+
+@media (min-width: 1150px) {
+  .footer-wrapper {
+    .container-desk();
   }
 }

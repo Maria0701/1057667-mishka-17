@@ -11,6 +11,7 @@
   padding-left: 75px;
   color: @black;
   font-size: 17px;
+  line-height: 24px;
   font-weight: bold;
   text-decoration: none;
   box-shadow: 0 1px 0 #ececec;
@@ -113,5 +114,23 @@
 
   .main-page__header-wrapper {
     position: relative;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-user {
+    justify-content: flex-end;
+    flex-basis: 45%;
+  }
+
+  .main-user__cart,
+  .main-user__search {
+    padding-top: 32px;
+    padding-bottom: 35px;
+  }
+
+  .main-user__cart::before,
+  .main-user__search::before {
+    top: 32px;
   }
 }

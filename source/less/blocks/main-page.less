@@ -3,17 +3,20 @@
   .container-mobile();
 }
 
+.main-page__header-background {
+  background-color: @bg-grey;
+  background-image: url("../img/hero-tablet@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
 .main-page__header {
   padding-top: 69px;
   padding-bottom: 174px;
   padding-left: 44px;
   padding-right: 30px;
   text-align: center;
-  background-color: @bg-grey;
-  background-image: url("../img/hero-tablet@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
 }
 
 .main-page__remark {
@@ -23,7 +26,7 @@
 @media (min-width: 768px) {
   .main-page__header {
     padding-top: 164px;
-    padding-bottom: 353px;
+    padding-bottom: 485px;
     padding-right: 82px;
     padding-left: 82px;
   }
@@ -36,5 +39,18 @@
     font-size: 15px;
     line-height: 24px;
     text-align: right;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-page__header-wrapper {
+    .container-mobile();
+    .container-desk();
+  }
+
+  .main-page__header {
+    padding-bottom: 472px;
+    padding-right: 220px;
+    padding-left: 220px;
   }
 }

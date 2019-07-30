@@ -1,4 +1,5 @@
 .catalog {
+  .container-mobile();
   padding-top: 30px;
   .container-mobile-paddings();
 }
@@ -143,5 +144,34 @@
 
   .catalog__item-price {
     font-size: 17px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog {
+    .container-desk();
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -25px;
+    margin-left: -25px;
+  }
+
+  .catalog__item {
+    flex-direction: column;
+    flex-basis: 366px;
+    padding-top: 130px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .catalog__item-link {
+    width: 100%;
+  }
+
+  .catalog__item-description {
+    width: 100%;
   }
 }
