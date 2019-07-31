@@ -72,6 +72,10 @@
   }
 }
 
+.main-navigation__list--submenu {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .main-navigation {
     display: flex;
@@ -112,6 +116,10 @@
     line-height: 24px;
     box-shadow: none;
   }
+
+  .main-navigation__list--submenu {
+    display: none;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -147,5 +155,18 @@
 
   .main-navigation__item:first-child .main-navigation__link {
     padding-left: 0;
+  }
+
+  .main-navigation__list--submenu {
+    display: flex;
+    position: absolute;
+    top: 70px;
+  }
+
+  .main-navigation__link--submenu {
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 24px;
   }
 }
