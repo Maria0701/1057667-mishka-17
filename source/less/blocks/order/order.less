@@ -1,9 +1,11 @@
 .order {
   padding-top: 20px;
+  padding-bottom: 20px;
   .container-mobile-paddings();
 }
 
 .order__text {
+  margin-top: 0;
   margin-bottom: 24px;
   font-size: 13px;
   line-height: 24px;
@@ -12,12 +14,30 @@
 @media (min-width: 768px) {
   .order {
     margin-bottom: 10px;
-    padding-top: 80px;
+    padding-top: 72px;
     padding-left: 0;
     padding-right: 0;
   }
 
   .order__text {
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order__text--wrapper {
     .container-tablet-paddings();
+  }
+}
+
+@media (min-width: 1150px) {
+  .order__text {
+    .container-mobile();
+    width: 66.66%;
+  }
+
+  .order__text--wrapper {
+    .container-desk();
+    .container-mobile();
   }
 }
