@@ -117,7 +117,7 @@
 .form__checkbox:checked:disabled + .form__label--check::before,
 .form__radio:disabled + .form__label--radio::before,
 .form__radio:checked:disabled + .form__label--radio::before {
-  border-color: #c7c7c7;
+  border-color: @button-active;
 }
 
 .form__label--text {
@@ -152,7 +152,7 @@
 
 .form__text::placeholder,
 .form__textarea::placeholder {
-  color: #d2d2d2;
+  color: @form-text;
 }
 
 .form__textarea {
@@ -176,7 +176,7 @@
 .form__textarea:hover,
 .form__textarea:focus {
   &::placeholder {
-    color: #c7c7c7;
+    color: @form-texthov;
   }
 }
 
@@ -186,8 +186,8 @@
   }
 }
 
-.form__inside--phone,
-.form__inside--email {
+.form__inside-wrapper--phone,
+.form__inside-wrapper--email {
   position: relative;
 
   &::after {
@@ -204,25 +204,25 @@
   }
 }
 
-.form__inside--phone::after {
+.form__inside-wrapper--phone::after {
   background-image: url("../img/icon-phone.svg");
 }
 
-.form__inside--phone:hover,
-.form__inside--phone:focus,
-.form__inside--phone:active {
+.form__inside-wrapper--phone:hover,
+.form__inside-wrapper--phone:focus,
+.form__inside-wrapper--phone:active {
   &::after {
     background-image: url("../img/icon-phone-hover.svg");
   }
 }
 
-.form__inside--email::after {
+.form__inside-wrapper--email::after {
   background-image: url("../img/icon-mail.svg");
 }
 
-.form__inside--email:hover,
-.form__inside--email:focus,
-.form__inside--email:active {
+.form__inside-wrapper--email:hover,
+.form__inside-wrapper--email:focus,
+.form__inside-wrapper--email:active {
   &::after {
     background-image: url("../img/icon-mail-hover.svg");
   }
@@ -245,8 +245,8 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 0;
-    padding-top: 45px;
-    padding-bottom: 34px;
+    padding-top: 40px;
+    padding-bottom: 36px;
     .container-tablet-paddings();
   }
 
@@ -257,7 +257,7 @@
 
   .form__label--radio::before,
   .form__label--check::before {
-    width: 50px;
+    width: 52px;
     height: 50px;
   }
 
@@ -268,8 +268,12 @@
     line-height: 20px;
   }
 
+  .form__radio:checked + .form__label--radio::before {
+    box-shadow: inset 0 0 0 12px @bg-white;
+  }
+
   .form__fieldset-wrapper--grey {
-    background-color: #f1f1f1;
+    background-color: @bg-grey;
   }
 
   .form__inside-wrapper {
@@ -287,32 +291,26 @@
   }
 
   .form__label--check {
-    flex-basis: 250px;
-    padding-top: 22px;
-    padding-bottom: 36px;
+    flex-basis: 240px;
+    padding-top: 25px;
+    padding-bottom: 33px;
     font-size: 19px;
     line-height: 18px;
+  }
+
+  @media (max-width: 1149px) {
+    .form__label--check:nth-child(4n) {
+      margin-left: 20px;
+    }
   }
 
   .form__fieldset + .form__fieldset {
     padding-top: 0;
   }
 
-  .form__fieldset--phone {
-    padding-bottom: 0;
-  }
-
-  .form__inside-wrapper--email {
-    padding-top: 0;
-  }
-
   .form__inside-wrapper--phone::after,
   .form__inside-wrapper--email::after {
     right: 70px;
-  }
-
-  .form__inside-wrapper--email::after {
-    bottom: 65px;
   }
 
   .form__fieldset--final {
@@ -337,24 +335,71 @@
 
 @media (min-width: 1150px) {
   .form__legend {
+    justify-content: center;
     width: 16.66%;
   }
 
   .form__fieldset {
     .container-desk();
     .container-mobile();
+
+    padding-bottom: 35px;
   }
 
   .form__label--check {
     flex-basis: 264px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+
+  .form__label--check::before {
+    top: 10px;
+  }
+
+  .form__label--text {
+    padding-top: 23px;
+    padding-right: 20px;
+  }
+
+  .form__text {
+    min-width: 82%;
+    width: unset;
+    margin-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-left: 20px;
   }
 
   .form__inside-wrapper--text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 66.66%;
     margin-right: auto;
+    margin-bottom: 15px;
+  }
+
+  .form__text--phone,
+  .form__text--email {
+    width: 100%;
+  }
+
+  .form__inside-wrapper--phone::after,
+  .form__inside-wrapper--email::after {
+    right: 3px;
+    bottom: 10px;
+  }
+
+  .form__fieldset + .form__fieldset {
+    margin-top: -32px;
   }
 
   .form__fieldset--final {
     width: 800px;
+  }
+
+  .form__button {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }

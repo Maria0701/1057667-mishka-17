@@ -58,11 +58,11 @@
 
   &:hover,
   &:focus {
-    color: #7c7c7c;
+    color: @button-active;
   }
 
   &:active {
-    color: #b2b2b2;
+    color: @nav-active;
   }
 }
 
@@ -150,6 +150,8 @@
 @media (min-width: 1150px) {
   .catalog {
     .container-desk();
+
+    padding-top: 130px;
   }
 
   .catalog__list {
@@ -162,7 +164,6 @@
   .catalog__item {
     flex-direction: column;
     flex-basis: 366px;
-    padding-top: 130px;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -173,5 +174,21 @@
 
   .catalog__item-description {
     width: 100%;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  .catalog__item-name {
+    margin-bottom: 2px;
+  }
+
+  .catalog__item-remark {
+    margin-bottom: 16px;
+  }
+
+  .catalog__order-button {
+    right: -6px;
   }
 }
