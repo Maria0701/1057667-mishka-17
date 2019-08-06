@@ -75,6 +75,12 @@
     background-size: contain;
   }
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .feedback__wrapper {
+      background-image: url("../img/review@2x.jpg");
+    }
+  }
+
   .feedback__name {
     margin-bottom: 50px;
     width: 50%;

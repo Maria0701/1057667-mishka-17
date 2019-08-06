@@ -9,7 +9,13 @@
   </head>
   <body>
     <header class="header">
-      <a title="Главная" class="logo header__logo"><img src="img/logo-mobile.svg" alt="Магазин вязаных штук" width="90" height="40"></a>
+      <a title="Главная" class="logo header__logo">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Магазин вязаных штук" width="90" height="40">
+        </picture>
+      </a>
       <div class="main-navigation header__navigation">
         <button class="main-navigation__toggle header__toggle" aria-label="Открыть меню" >
           <span class="main-navigation__toggle-inside"></span>
@@ -71,7 +77,11 @@
               </tbody>
             </table>
             <a href="#" title="Вязаные корзинки" class="hits-item__image">
-              <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+                <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
+              </picture>
             </a>
             <p class="hits-item__price">Цена: 990 руб.</p>
             <button class="button hits-item__button" type="button">Заказать</button>
@@ -129,7 +139,11 @@
             </table>
           </div>
           <div class="contacts__map">
-            <img src="img/map-mobile@1x.jpg" class="contacts__map-image" alt="Расположение магазина" width="322" height="457">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+              <img src="img/map-mobile@1x.jpg" class="contacts__map-image" alt="Расположение магазина" width="322" height="457">
+            </picture>
           </div>
           <a href="contact-form.html" class="button contacts__button" title="Напишите нам">Напишите нам</a>
         </div>
