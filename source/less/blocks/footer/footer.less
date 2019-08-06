@@ -43,16 +43,14 @@
     width: 102px;
     height: 35px;
     background-color: inherit;
-    background-image: url("../img/logo-footer.svg");
-    background-repeat: no-repeat;
 
     &:hover,
-    &:focus {
-      background-image: url("../img/logo-footer-hover.svg");
+    &:focus svg {
+      fill: @decoration-2hov;
     }
 
-    &:active {
-      background-image: url("../img/logo-footer-active.svg");
+    &:active svg {
+      fill: @decoration-2act;
     }
   }
 }
