@@ -242,12 +242,13 @@
 
 @media (min-width: 768px) {
   .form__fieldset {
+    .container-tablet-paddings();
+
     display: flex;
     align-items: flex-start;
     margin-bottom: 0;
     padding-top: 40px;
     padding-bottom: 36px;
-    .container-tablet-paddings();
   }
 
   .form__legend {
@@ -277,7 +278,7 @@
   }
 
   .form__inside-wrapper {
-    width: 83.33%;
+    flex-basis: 83.33%;
   }
 
   .form__inside-wrapper--checkbox {
@@ -336,7 +337,7 @@
 @media (min-width: 1150px) {
   .form__legend {
     justify-content: center;
-    width: 16.66%;
+    flex-basis: : 16.66%;
   }
 
   .form__fieldset {

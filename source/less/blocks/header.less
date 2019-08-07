@@ -1,9 +1,10 @@
 .header {
+  .container-mobile();
+  .container-mobile-paddings();
+
   position: relative;
   display: flex;
   flex-direction: column;
-  .container-mobile();
-  .container-mobile-paddings();
   box-shadow: 0 1px 0 #ececec;
 }
 
@@ -29,8 +30,9 @@
 
 @media (min-width: 768px) {
   .header {
-    flex-direction: row;
     .container-tablet-paddings();
+
+    flex-direction: row;
   }
 
   .header__logo {

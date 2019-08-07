@@ -3,9 +3,10 @@
 }
 
 .contacts__wrapper {
+  .container-mobile-paddings();
+
   padding-top: 38px;
   padding-bottom: 40px;
-  .container-mobile-paddings();
   font-size: 15px;
   line-height: 30px;
   background-color: @bg-white;
@@ -112,10 +113,11 @@
 
 @media (min-width: 768px) {
   .contacts__wrapper {
+    .container-tablet-paddings();
+
     display: flex;
     flex-direction: column;
     padding-top: 85px;
-    .container-tablet-paddings();
   }
 
   .contacts__name {

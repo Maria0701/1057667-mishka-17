@@ -4,9 +4,10 @@
 }
 
 .categories__list {
+  .nolist();
+
   display: flex;
   flex-direction: column;
-  .nolist();
 }
 
 .categories__item {
@@ -109,10 +110,11 @@
 
 @media (min-width: 768px) {
   .categories {
+    .container-tablet-paddings();
+
     position: absolute;
     bottom: 0;
     width: 100%;
-    .container-tablet-paddings();
   }
 
   .categories__list {

@@ -4,9 +4,10 @@
 
 .footer-wrapper {
   .container-mobile();
+  .container-mobile-paddings();
+
   padding-top: 25px;
   padding-bottom: 22px;
-  .container-mobile-paddings();
 }
 
 .footer__social {
@@ -24,13 +25,14 @@
 
 @media (min-width: 768px) {
   .footer-wrapper {
+    .container-tablet-paddings();
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-top: 55px;
     padding-bottom: 55px;
-    .container-tablet-paddings();
   }
 
   .footer__social {
