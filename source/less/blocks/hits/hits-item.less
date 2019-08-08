@@ -1,7 +1,8 @@
 .hits-item {
+  .container-mobile-paddings();
+
   padding-top: 27px;
   padding-bottom: 35px;
-  .container-mobile-paddings();
   background-color: @bg-white;
 }
 
@@ -56,9 +57,11 @@
 
 .hits-item__image img {
   display: block;
+  width: 100%;
 }
 
 .hits-item__price {
+  margin-top: 0;
   margin-bottom: 24px;
   font-size: 17px;
   line-height: 24px;
@@ -70,4 +73,132 @@
 
 .hits-item__button {
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hits-item {
+    .container-tablet-paddings();
+  }
+
+  .hits-item__name {
+    margin-right: 100px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .hits-item__name-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 55px;
+  }
+
+  .hits-item__details-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-right: 42px;
+    width: 50%;
+  }
+
+  .hits-item__hit-remark {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: auto;
+    width: 100px;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .hits-item__image {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+  }
+
+  .hits-item__description {
+    margin-top: 0;
+    margin-bottom: 53px;
+  }
+
+  .hits-item__properties {
+    margin-bottom: 60px;
+  }
+
+  .hits-item__price {
+    margin-bottom: 33px;
+  }
+
+  .hits-item__button {
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .hits {
+    .container-desk();
+    .container-mobile();
+  }
+
+  .hits-item {
+    position: relative;
+    padding-top: 125px;
+    padding-bottom: 75px;
+  }
+
+  .hits-item__name-wrapper {
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .hits-item__hit-remark {
+    width: 170px;
+    margin-left: 0;
+    padding-top: 14px;
+    padding-right: 51px;
+    padding-left: 40px;
+    text-align: center;
+  }
+
+  .hits-item__name {
+    order: 1;
+    z-index: 2;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .hits-item__details-wrapper {
+    position: static;
+    width: 32%;
+    margin-left: 16.66%;
+  }
+
+  .hits-item__image {
+    left: 50%;
+    top: 75px;
+    width: ~"calc(50% - 50px)";
+  }
+
+  .hits-item__properties {
+    margin-bottom: 110px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .hits-item__description {
+    margin-bottom: 44px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .hits-item__property-name,
+  .hits-item__property-value {
+    padding-bottom: 10px;
+  }
+
+  .hits-item__button {
+    margin-bottom: 0;
+  }
 }
