@@ -1,10 +1,52 @@
 .order {
   .container-mobile-paddings();
+
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .order__text {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 24px;
   font-size: 13px;
   line-height: 24px;
+}
+
+@media (min-width: 768px) {
+  .order {
+    margin-bottom: 10px;
+    padding-top: 72px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .order__text {
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order__text--wrapper {
+    .container-tablet-paddings();
+
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .order {
+    margin-bottom: 0;
+    padding-top: 120px;
+    padding-bottom: 15px;
+  }
+
+  .order__text {
+    .container-mobile();
+    width: 66.66%;
+  }
+
+  .order__text--wrapper {
+    .container-desk();
+    .container-mobile();
+  }
 }

@@ -1,5 +1,9 @@
 .advantages {
+  .container-mobile();
   .container-mobile-paddings();
+}
+
+.advantages__wrapper {
   padding-top: 35px;
   padding-bottom: 33px;
   background-color: @bg-white;
@@ -67,4 +71,63 @@
 
 .advantages__item--present::before {
   background-image: url("../img/icon-feature-gift.svg");
+}
+
+@media (min-width: 768px) {
+  .advantages__wrapper {
+    .container-tablet-paddings();
+
+    padding-top: 75px;
+    padding-bottom: 50px;
+  }
+
+  .advantages__name {
+    margin-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    flex-basis: 334px;
+    flex-grow: 1;
+    padding-right: 30px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .advantages {
+    .container-desk();
+  }
+
+  .advantages__name {
+    margin-bottom: 47px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .advantages__wrapper {
+    .container-desk();
+
+    padding-top: 80px;
+    padding-bottom: 33px;
+    padding-right: 255px;
+    padding-left: 195px;
+  }
+
+  .advantages__item {
+    flex-basis: 330px;
+    margin-bottom: 57px;
+    padding-right: 55px;
+  }
+
+  .advantages__item::before {
+    margin-bottom: 15px;
+  }
 }
