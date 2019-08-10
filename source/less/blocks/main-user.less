@@ -8,35 +8,14 @@
   display: block;
   padding-top: 26px;
   padding-bottom: 26px;
-  padding-left: 75px;
   color: @black;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   text-decoration: none;
   box-shadow: 0 1px 0 #ececec;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 28px;
-    left: 0;
-    display: block;
-    width: 22px;
-    height: 22px;
-    background-color: inherit;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }
 
-.main-user__cart::before {
-  background-image: url("../img/icon-cart.svg");
-}
-
-.main-user__search::before {
-  background-image: url("../img/icon-search.svg");
-}
 
 .main-user__cart:hover,
 .main-user__search:hover,
@@ -50,29 +29,39 @@
   color: @nav-active;
 }
 
+.main-user__icon-cart {
+  margin-right: 34px;
+  margin-left: 30px;
+  fill: @form-text;
+}
+
+.main-user__icon-search {
+  fill: @form-text;
+}
+
 .main-user__cart:hover,
 .main-user__cart:focus {
-  &::before {
-    background-image: url("../img/icon-carthov.svg");
+  .main-user__icon-cart {
+    fill: @decoration-1;
   }
 }
 
 .main-user__cart:active {
-  &::before {
-    background-image: url("../img/icon-cartact.svg");
+  .main-user__icon-cart {
+    fill: @fill-icon-act;
   }
 }
 
 .main-user__search:hover,
 .main-user__search:focus {
-  &::before {
-    background-image: url("../img/icon-search-hover.svg");
+  .main-user__icon-search {
+    fill: @decoration-1;
   }
 }
 
 .main-user__search:active {
-  &::before {
-    background-image: url("../img/icon-search-active.svg");
+  .main-user__icon-search {
+  fill: @fill-icon-act;
   }
 }
 
@@ -82,37 +71,29 @@
     flex-wrap: wrap;
   }
 
-  .main-user__cart,
-  .main-user__search {
+  .main-user__cart {
     display: flex;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     box-shadow: none;
-  }
-
-  .main-user__cart {
-    padding-left: 85px;
     border-left: @border;
-
-    &::before {
-      top: 34px;
-      left: 32px;
-    }
   }
 
   .main-user__search {
     width: 84px;
-    padding-left: 84px;
     white-space: nowrap;
     border-left: @border;
     overflow: hidden;
     text-indent: 100%;
+  }
 
-    &::before {
-      top: 34px;
-      left: 34px;
-    }
+  .main-user__icon-search {
+    width: 84px;
+    margin-left: -84px;
+    margin-top: 5px;
+    margin-bottom: -6px;
+    box-shadow: none;
   }
 
   .main-page__header-wrapper {
@@ -135,5 +116,15 @@
   .main-user__cart::before,
   .main-user__search::before {
     top: 34px;
+  }
+
+  .main-user__icon-cart {
+    margin-right: 34px;
+    margin-left: 30px;
+  }
+
+  .main-user__icon-search {
+    width: 84px;
+    margin-left: -84px;
   }
 }
