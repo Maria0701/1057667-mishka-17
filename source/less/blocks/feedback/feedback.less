@@ -10,7 +10,7 @@
 
 .feedback__name {
   margin-top: 0;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -52,14 +52,24 @@
   border: @border;
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover {
+    background-color: transparent;
+  }
 }
 
-.feedback__prev {
-  background-image: url("../img/icon-left-arrow.svg");
+.feedback__icon {
+  fill: @black;
 }
 
-.feedback__next {
-  background-image: url("../img/icon-right-arrow.svg");
+.feedback__prev:hover .feedback__icon,
+.feedback__next:hover .feedback__icon {
+  fill: @arrow-hov;
+}
+
+.feedback__prev:active .feedback__icon,
+.feedback__next:active .feedback__icon {
+  fill: @nav-active;
 }
 
 @media (min-width: 768px) {

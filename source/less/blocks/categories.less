@@ -29,36 +29,62 @@
   color: @bg-white;
   background-color: @decoration-1;
   text-decoration: none;
+}
 
-  &::after {
-    content: "";
-    top: 20px;
-    display: block;
-    width: 65px;
-    height: 65px;
-    padding-left: 150px;
-    background-repeat: no-repeat;
-    background-position: right;
-  }
+.categories__icon {
+  margin-left: 20px;
+  width: 65px;
+  height: 65px;
+}
+
+.categories__icon--left {
+  fill: @left-icon;
+}
+
+.categories__icon--right {
+  fill: @right-icon;
 }
 
 .categories__item--interior {
   background-color: @decoration-1;
+}
 
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: @decoration-1hov;
+.categories__item--interior:hover,
+.categories__item--interior:focus {
+  background-color: @decoration-1hov;
+
+  .categories__icon--left {
+    fill: @left-icon-hov;
+  }
+}
+
+.categories__item--interior:active {
+  background-color: @decoration-1hov;
+
+  .categories__icon--left {
+    fill: @left-icon-act;
   }
 }
 
 .categories__item--toys {
+  color: @decoration-2txt;
   background-color: @decoration-2;
+}
 
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: @decoration-2hov;
+.categories__item--toys:hover,
+.categories__item--toys:focus {
+  background-color: @decoration-2hov;
+
+  .caterories__icon--right {
+    fill: @right-icon-hov;
+  }
+}
+
+.categories__item--toys:active {
+  background-color: @decoration-2hov;
+
+  .caterories__icon--right {
+    fill: @right-icon-act;
   }
 }
 
@@ -70,11 +96,6 @@
 
 .categories__link--toys {
   background-color: @decoration-2;
-
-  &::after {
-    right: 22px;
-    background-image: url("../img/icon-toy.svg");
-  }
 
   &:hover,
   &:focus,
@@ -89,13 +110,6 @@
 
 .categories__link--interior {
   background-color: @decoration-1;
-
-  &::after {
-    position: relative;
-    right: 7px;
-    top: 4px;
-    background-image: url("../img/icon-interior.svg");
-  }
 
   &:hover,
   &:focus,
@@ -141,12 +155,12 @@
     padding-top: 27px;
     padding-bottom: 24px;
     padding-left: 35px;
-    padding-right: 35px;
+    padding-right: 33px;
     font-size: 20px;
     line-height: 30px;
   }
 
-  .categories__link::after {
-    padding-left: 350px;
+  .categories__icon {
+    margin-left: 210px;
   }
 }
