@@ -28,49 +28,28 @@
 .advantages__item {
   position: relative;
   flex-basis: 260px;
-  margin-bottom: 34px;
+  margin-bottom: 28px;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   color: @black;
+}
 
-  &::before {
-    content: "";
-    display: block;
-    margin-bottom: 10px;
-    width: 60px;
-    height: 40px;
-    background-repeat: no-repeat;
-    background-color: inherit;
-  }
+.advantages__icon {
+  display: block;
+  margin-bottom: 16px;
+  fill: @decoration-1;
+}
+
+.advantages__icon--heart {
+  margin-bottom: 10px;
+  padding-left: 5px;
+  width: 40px;
+  height: 54px;
 }
 
 .advantages__item:last-child {
   margin-bottom: 0;
-}
-
-.advantages__item--ekology::before {
-  background-image: url("../img/icon-feature-flower.svg");
-}
-
-.advantages__item--scand::before {
-  background-image: url("../img/icon-feature-money.svg");
-}
-
-.advantages__item--likes::before {
-  background-image: url("../img/icon-feature-heart.svg");
-}
-
-.advantages__item--handmade::before {
-  background-image: url("../img/icon-feature-ball.svg");
-}
-
-.advantages__item--rus::before {
-  background-image: url("../img/icon-feature-rocket.svg");
-}
-
-.advantages__item--present::before {
-  background-image: url("../img/icon-feature-gift.svg");
 }
 
 @media (min-width: 768px) {
@@ -125,9 +104,15 @@
     flex-basis: 330px;
     margin-bottom: 57px;
     padding-right: 55px;
+    max-width: 50%;
   }
 
-  .advantages__item::before {
+  .advantages__icon {
     margin-bottom: 15px;
+  }
+
+  .advantages__item--scand .advantages__icon,
+  .advantages__item--rus .advantages__icon {
+    margin-bottom: 21px;
   }
 }
