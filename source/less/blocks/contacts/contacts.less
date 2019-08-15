@@ -80,7 +80,7 @@
 }
 
 .contacts__map-image {
-  margin-bottom: 42px;
+
   display: block;
   width: 100%;
   height: auto;
@@ -89,6 +89,7 @@
 .contacts__map {
   position: relative;
   z-index: 1;
+  margin-bottom: 42px;
 
   &::before {
     content: "";
@@ -117,11 +118,12 @@
 
     display: flex;
     flex-direction: column;
-    padding-top: 85px;
+    padding-top: 63px;
+    padding-bottom: 55px;
   }
 
   .contacts__name {
-    margin-bottom: 36px;
+    margin-bottom: 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -140,7 +142,9 @@
   }
 
   .contacts__table {
-    margin-bottom: 55px;
+    margin-bottom: 47px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .contacts__table-body {
@@ -152,14 +156,30 @@
     padding-right: 10px;
   }
 
+  .contacts__cell {
+    padding-left: 23px;
+  }
+
   .contacts__cell:first-child {
     padding-left: 0;
   }
 
   .contacts__button {
     align-self: center;
-    padding-right: 42px;
-    padding-left: 42px;
+    padding-right: 37px;
+    padding-left: 37px;
+    letter-spacing: 0;
+  }
+
+  .contacts__map {
+    margin-left:-50px;
+    margin-right: -50px;
+    margin-bottom: 54px;
+
+    &::before {
+      top: 139px;
+      left: 364px;
+    }
   }
 }
 
@@ -172,19 +192,19 @@
   .contacts__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 85px;
+    padding-top: 90px;
     padding-bottom: 105px;
     padding-left: 175px;
     padding-right: 0;
   }
 
   .contacts__wrapper-inside {
-    padding-top: 65px;
+    padding-top: 58px;
   }
 
   .contacts__name {
     justify-content: flex-start;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
     margin-left: -110px;
     font-size: 53px;
     line-height: 57px;
@@ -214,7 +234,13 @@
   }
 
   .contacts__map {
+    margin: 0;
     width: 525px;
+
+    &::before {
+      top: 144px;
+      left: 238px;
+    }
   }
 
   .contacts__map-image {
@@ -222,9 +248,9 @@
   }
 
   .contacts__button {
-    margin-top: -50px;
+    margin-top: -51px;
     margin-left: 0;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 }
