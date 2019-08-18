@@ -118,7 +118,7 @@
               <span class="catalog__item-remark">Рост 30 см, вес 200 г</span>
               <div class="catalog__item-order">
                 <p class="catalog__item-price">1200 руб.</p>
-                <a href="add_to_cart" class="catalog__order-button" title="Добавить в корзину Зайчик-попрыгайчик" aria-label="Добавить в корзину">
+                <a href="add_to_cart" class="catalog__order-button button__order" title="Добавить в корзину Зайчик-попрыгайчик" aria-label="Добавить в корзину">
                   <svg class="catalog__icon-cart" width="21" height="19" aria-hidden="true" role="presentation"><use xlink:href="#icon-cart"></use></svg>
                 </a>
               </div>
@@ -137,7 +137,7 @@
               <span class="catalog__item-remark">Диаметр 15 см, высота 10 см</span>
               <div class="catalog__item-order">
                 <p class="catalog__item-price">690 руб.</p>
-                <a href="add_to_cart" class="catalog__order-button" title="Добавить в корзину Корзинка для белья" aria-label="Добавить в корзину">
+                <a href="add_to_cart" class="catalog__order-button button__order" title="Добавить в корзину Корзинка для белья" aria-label="Добавить в корзину">
                   <svg class="catalog__icon-cart" width="21" height="19" aria-hidden="true" aria-hidden="true" role="presentation"><use xlink:href="#icon-cart"></use></svg>
                 </a>
               </div>
@@ -156,8 +156,8 @@
               <span class="catalog__item-remark">Диаметр 30 см, высота 30 см</span>
               <div class="catalog__item-order">
                 <p class="catalog__item-price">1500 р.</p>
-                <a href="add_to_cart" class="catalog__order-button" title="Добавить в корзину Большая корзинка для игрушек" aria-label="Добавить в корзину">
-                  <svg class="catalog__icon-cart" width="21" height="19" aria-hidden="true" aria-hidden="true" role="presentation"><use xlink:href="#icon-cart"></use></svg>
+                <a href="add_to_cart" class="catalog__order-button button__order" title="Добавить в корзину Большая корзинка для игрушек" aria-label="Добавить в корзину">
+                  <svg class="catalog__icon-cart" width="21" height="19" aria-hidden="true" role="presentation"><use xlink:href="#icon-cart"></use></svg>
                 </a>
               </div>
             </div>
@@ -166,17 +166,19 @@
       </div>
       <div class="how-block">
         <div class="how-block__wrapper">
+          <a href="#youtubevideo" class="how-block__video-play" title="Посмотреть видео для подписчиков" aria-label="включить просмотр видео">
           <figure class="how-block__video-responsive">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Посмотреть видео" width="260" height="150" class="how-block__video-placeholder">
             </picture>
-          </figure>
+            </figure>
+          </a>
           <div class="how-block__wrapper-inside">
             <h2 class="how-block__header">Процесс производства</h2>
             <p class="how-block__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
-            <a class="button how-block__button" title="Сделать заказ" href="order.html">Сделать заказ</a>
+            <a class="button button__order how-block__button" title="Сделать заказ" href="order.html">Сделать заказ</a>
           </div>
         </div>
       </div>
@@ -211,5 +213,21 @@
         </div>
       </div>
     </footer>
+    <section class="modal">
+      <div class="modal__wrapper">
+        <h2 class="modal__name">Добавить в корзину</h2>
+        <form class="modal__form form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="modal__legend">Выберите размер:</div>
+          <div class="modal__fieldset">
+            <input type="radio" class="modal__input" name="size" id="size-s" value="S"><label for="size-s" class="modal__label">S</label>
+            <input type="radio" class="modal__input" name="size" id="size-m" value="M"><label for="size-m" class="modal__label">M</label>
+            <input type="radio" class="modal__input" name="size" id="size-l" value="L"><label for="size-l" class="modal__label">L</label>
+          </div>
+          <input type="submit" value="Добавить" class="button modal__button">
+        </form>
+      </div>
+    </section>
+    <div class="overlay"></div>
+    <script src="js/script.js"></script>
   </body>
 </html>

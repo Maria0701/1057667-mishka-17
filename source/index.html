@@ -151,7 +151,7 @@
               </picture>
             </a>
             <p class="hits-item__price">Цена: 990 руб.</p>
-            <a class="button hits-item__button" href="#send-order" title="Заказать">Заказать</a>
+            <a class="button button__order hits-item__button" href="#send-order" title="Заказать">Заказать</a>
           </div>
         </div>
       </section>
@@ -208,7 +208,7 @@
                 <span class="visually-hidden">Следующий отзыв</span></button>
             </div>
           </div>
-          <a class="button feedback__button" href="#">Написать</a>
+          <a class="button feedback__button" href="feedback.html">Написать</a>
         </div>
       </section>
       <section class="contacts">
@@ -234,6 +234,7 @@
               <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
               <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" class="contacts__map-image" alt="Расположение магазина" width="322" height="457">
             </picture>
+            <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.6168077243373!2d30.322794457592853!3d59.93854460980478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1566133045077!5m2!1sru!2sru" width="100%" height="100%" allowfullscreen></iframe>
           </div>
           <a href="contact-form.html" class="button contacts__button" title="Напишите нам">Напишите нам</a>
         </div>
@@ -286,34 +287,6 @@
       </div>
     </section>
     <div class="overlay"></div>
-    <script>
-      var navMain = document.querySelector(".main-navigation");
-      var navToggle = document.querySelector(".main-navigation__toggle");
-      var link = document.querySelector(".hits-item__button");
-      var popup = document.querySelector(".modal");
-      var overlayClose = document.querySelector(".overlay");
-
-      navMain.classList.remove("main-navigation--nojs");
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains("main-navigation--closed")) {
-          navMain.classList.remove("main-navigation--closed");
-          navMain.classList.add("main-navigation--opened");
-        } else {
-          navMain.classList.add("main-navigation--closed");
-          navMain.classList.remove("main-navigation--opened");
-        }
-      });
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal--show");
-      })
-        overlayClose.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal--show");
-      })
-
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
