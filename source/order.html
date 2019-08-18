@@ -6,6 +6,10 @@
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <script>
+        document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <svg style="display:none">
@@ -141,20 +145,26 @@
           <div class="form__fieldset-wrapper">
             <div class="form__fieldset form__fieldset--details">
               <div class="form__legend">ФИО</div>
-              <div class="form__inside-wrapper form__inside-wrapper--text">
-                <label class="form__label form__label--text" for="user-name">Имя:</label>
-                <input type="text" class="form__text" value="" name="name" placeholder="Введите ваше имя*" id="user-name" required>
-                <label class="form__label form__label--text" for="user-surname">Фамилия:</label>
-                <input type="text" class="form__text" value="" name="surname" placeholder="Введите вашу фамилию*" id="user-surname" required>
-                <label class="form__label form__label--text" for="user-fathersname"> Отчество:</label>
-                <input type="text" class="form__text" value="" name="farthersname" placeholder="Отчество, если желаете" id="user-fathersname" required>
+              <div class="form__inside-wrapper ">
+                <p class="form__inside-text">
+                  <label class="form__label form__label--text" for="user-name">Имя:</label>
+                  <input type="text" class="form__text" value="" name="name" placeholder="Введите ваше имя*" id="user-name" required>
+                </p>
+                <p class="form__inside-text">
+                  <label class="form__label form__label--text" for="user-surname">Фамилия:</label>
+                  <input type="text" class="form__text" value="" name="surname" placeholder="Введите вашу фамилию*" id="user-surname" required>
+                </p>
+                <p class="form__inside-text">
+                  <label class="form__label form__label--text" for="user-fathersname"> Отчество:</label>
+                  <input type="text" class="form__text" value="" name="farthersname" placeholder="Отчество, если желаете" id="user-fathersname" required>
+                </p>
               </div>
             </div>
           </div>
           <div class="form__fieldset-wrapper form__fieldset-wrapper--grey">
             <div class="form__fieldset form__fieldset--contacts">
               <div class="form__legend">Тел</div>
-              <div class="form__inside-wrapper form__inside-wrapper--text form__inside-wrapper--phone">
+              <div class="form__inside-wrapper form__inside-wrapper--phone">
                 <label class="visually-hidden" for="user-phone">Введите ваш телефон</label>
                 <input type="text" class="form__text form__text--phone" value="" name="phone" placeholder="+7 XXX XXX XX XX*" id="user-phone" required>
                 <svg class="form__icon" width="30" height="30" aria-hidden="true" role="presentation"><use xlink:href="#icon-phone"></use></svg>
@@ -162,7 +172,7 @@
             </div>
             <div class="form__fieldset form__fieldset--contacts">
               <div class="form__legend">E-mail</div>
-              <div class="form__inside-wrapper form__inside-wrapper--email form__inside-wrapper--text">
+              <div class="form__inside-wrapper form__inside-wrapper--email">
                 <label class="visually-hidden" for="user-email">Введите вашу электронную почту</label>
                 <input type="text" class="form__text form__text--email" value="" name="email" placeholder="Ваш Email*" id="user-email" required>
                 <svg class="form__icon" width="30" height="30" aria-hidden="true" role="presentation"><use xlink:href="#icon-mail"></use></svg>

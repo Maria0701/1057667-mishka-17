@@ -214,6 +214,11 @@
   }
 }
 
+.form__inside-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 @media (max-width: 767px) {
   .form__button {
     width: 100%;
@@ -261,6 +266,7 @@
   .form__label--radio {
     padding-top: 27px;
     padding-bottom: 30px;
+    width: 100%;
     font-size: 19px;
     line-height: 20px;
   }
@@ -274,12 +280,14 @@
   }
 
   .form__inside-wrapper {
+    display: flex;
+    flex-wrap: wrap;
     flex-basis: 83.33%;
   }
 
   .form__inside-wrapper--checkbox {
-    display: flex;
-    flex-wrap: wrap;
+    flex-basis: 500px;
+    flex-grow: 1;
   }
 
   .form__label--radio,
@@ -291,13 +299,14 @@
     flex-basis: 240px;
     padding-top: 25px;
     padding-bottom: 33px;
+    max-width: 47%;
     font-size: 19px;
     line-height: 18px;
   }
 
-  .form__inside-wrapper--text {
+  .form__inside-text {
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
   }
 
   .form__label--text {

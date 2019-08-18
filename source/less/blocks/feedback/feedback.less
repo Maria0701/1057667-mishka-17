@@ -47,19 +47,26 @@
 
 .feedback__prev,
 .feedback__next {
+  position: relative;
   flex-basis: 130px;
-  height: 50px;
+  flex-grow: 1;
+  height: 52px;
   border: @border;
   background-repeat: no-repeat;
   background-position: center;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     background-color: transparent;
   }
 }
 
 .feedback__icon {
+  width: 50px;
+  height: 27px;
   fill: @black;
+  overflow: hidden;
 }
 
 .feedback__prev:hover .feedback__icon,
@@ -79,7 +86,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 65px;
-    padding-top: 75px;
+    padding-top: 77px;
     padding-bottom: 50px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
