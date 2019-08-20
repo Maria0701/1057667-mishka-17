@@ -47,19 +47,26 @@
 
 .feedback__prev,
 .feedback__next {
+  position: relative;
   flex-basis: 130px;
-  height: 50px;
+  flex-grow: 1;
+  height: 52px;
   border: @border;
   background-repeat: no-repeat;
   background-position: center;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     background-color: transparent;
   }
 }
 
 .feedback__icon {
+  width: 50px;
+  height: 27px;
   fill: @black;
+  overflow: hidden;
 }
 
 .feedback__prev:hover .feedback__icon,
@@ -79,7 +86,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 65px;
-    padding-top: 85px;
+    padding-top: 77px;
     padding-bottom: 50px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -112,7 +119,7 @@
   }
 
   .feedback__text {
-    margin-bottom: 70px;
+    margin-bottom: 53px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -123,10 +130,10 @@
 
   .feedback__directions {
     position: absolute;
-    bottom: 0;
+    bottom: 6px;
     right: 0;
     margin-bottom: 0;
-    width: 167px;
+    width: 170px;
   }
 
   .feedback__prev,
@@ -151,7 +158,6 @@
   }
 
   .feedback__name {
-    margin-bottom: 49px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -166,7 +172,7 @@
   }
 
   .feedback__directions {
-    bottom: 5px;
-    right: 5px;
+    bottom: 8px;
+    right: 3px;
   }
 }

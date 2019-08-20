@@ -1,14 +1,17 @@
 .how-block {
   .container-mobile();
   .container-mobile-paddings();
+  margin-bottom: 58px;
 }
 
 .how-block__wrapper {
   position: relative;
-  padding-top: 95px;
-  padding-left: 33px;
-  padding-right: 33px;
+  padding-top: 97px;
   border: @border;
+}
+
+.how-block__wrapper:hover .how-block__wrapper-inside {
+  box-shadow: 0 6px 10px rgba(@black, 0.1);
 }
 
 .how-block__header {
@@ -38,7 +41,6 @@
 .how-block__text {
   margin-top: 0;
   margin-bottom: 25px;
-
   font-size: 13px;
   line-height: 24px;
 }
@@ -53,10 +55,7 @@
 .how-block__video-responsive {
   display: flex;
   position: relative;
-  margin-top: 0;
-  margin-bottom: 25px;
-  margin-left: -33px;
-  margin-right: -33px;
+  margin: 0;
 
   &::before {
     content: "";
@@ -76,13 +75,13 @@
 
 .how-block__video-responsive:hover,
 .how-block__video-responsive:focus {
-  &::before {
+  ::before {
     transform: scale(1.2);
   }
 }
 
 .how-block__video-responsive:active {
-  &::before {
+  ::before {
     opacity: 0.3;
     transform: scale(0.8);
   }
@@ -101,11 +100,15 @@
 
 .how-block__wrapper-inside {
   padding-bottom: 33px;
+  padding-top: 27px;
+  padding-left: 33px;
+  padding-right: 33px;
 }
 
 @media (min-width: 768px) {
   .how-block {
     .container-tablet-paddings();
+    margin-bottom: 62px;
   }
 
   .how-block__wrapper {
@@ -115,14 +118,14 @@
   }
 
   .how-block__video-responsive {
-    margin-bottom: 38px;
+    margin-bottom: 0;
     margin-right: 0;
     margin-left: 0;
   }
 
-
   .how-block__header {
     position: static;
+    margin-bottom: 26px;
     font-size: 20px;
     line-height: 24px;
 
@@ -134,13 +137,16 @@
   }
 
   .how-block__wrapper-inside {
+    padding-top: 33px;
     padding-right: 40px;
     padding-left: 40px;
-    padding-bottom: 45px;
+    padding-bottom: 44px;
   }
 
   .how-block__text {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
+    font-size: 15px;
+    line-height: 30px;
   }
 }
 
@@ -164,7 +170,7 @@
     flex-basis: 367px;
     padding-top: 42px;
     padding-bottom: 58px;
-    padding-left: 79px;
+    padding-left: 77px;
     padding-right: 56px;
   }
 
@@ -179,7 +185,5 @@
 
   .how-block__text {
     margin-bottom: 45px;
-    font-size: 15px;
-    line-height: 30px;
   }
 }

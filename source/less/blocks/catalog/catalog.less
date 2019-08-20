@@ -33,7 +33,7 @@
   flex-direction: column;
   flex-grow: 1;
   padding-top: 27px;
-  padding-bottom: 28px;
+  padding-bottom: 27px;
   padding-left: 28px;
   padding-right: 28px;
   border: @border;
@@ -79,6 +79,7 @@
 .catalog__item-order {
   position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-top: @border;
@@ -86,11 +87,40 @@
 
 .catalog__item-price {
   margin-top: 21px;
+  margin-bottom: 0;
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
   color: @black;
 }
+
+.catalog__order-button {
+  position: relative;
+  display: block;
+  margin-top: 17px;
+  width: 19px;
+  height: 19px;
+}
+
+.catalog__icon-cart {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 21px;
+  width: 19px;
+  fill: @form-text;
+  overflow: hidden;
+}
+
+.catalog__icon-cart:hover,
+.catalog__icon-cart:focus {
+  fill: @decoration-1;
+}
+
+.catalog__icon-cart:active {
+  fill: @fill-icon-act;
+}
+
 
 @media (min-width: 768px) {
   .catalog {
@@ -101,23 +131,18 @@
 
   .catalog__item {
     flex-direction: row;
-    margin-bottom: 55px;
-  }
-
-  .catalog__item-link {
-    width: 50%;
+    margin-bottom: 54px;
   }
 
   .catalog__item-description {
-    width: 50%;
-    padding-top: 30px;
-    padding-bottom: 28px;
-    padding-left: 33px;
+    padding-top: 24px;
+    padding-bottom: 27px;
+    padding-left: 27px;
     padding-right: 33px;
   }
 
   .catalog__item-name {
-    margin-bottom: 18px;
+    margin-bottom: 5px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -130,6 +155,18 @@
 
   .catalog__item-price {
     font-size: 17px;
+  }
+
+  @media (max-width: 1149px) {
+    .catalog__item-link {
+      flex-basis: 50%;
+      width: 50%;
+    }
+
+    .catalog__item-description {
+      flex-basis: 50%;
+      width: 50%;
+    }
   }
 }
 
@@ -151,20 +188,16 @@
   .catalog__item {
     flex-direction: column;
     flex-basis: 366px;
+    margin-bottom: 55px;
     padding-left: 25px;
     padding-right: 25px;
-  }
-
-  .catalog__item-link {
-    width: 100%;
+    max-width: 33.33%;
   }
 
   .catalog__item-description {
-    width: 100%;
     padding-top: 25px;
-    padding-bottom: 10px;
     padding-left: 27px;
-    padding-right: 27px;
+    padding-right: 31px;
   }
 
   .catalog__item-name {
@@ -175,8 +208,11 @@
     margin-bottom: 15px;
   }
 
-  .catalog__icon-cart {
-    margin-top: 8px;
-    margin-right: 4px;
+  .catalog__item-price {
+    margin-top: 22px;
+  }
+
+  .catalog__order-button {
+    padding-top: 8px;
   }
 }
