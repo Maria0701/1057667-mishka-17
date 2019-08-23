@@ -69,6 +69,7 @@ gulp.task("html", function () {
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
+      "source/js/picturefill.min.js",
       "source/*.ico"
     ], {
       base: "source"
@@ -77,8 +78,9 @@ gulp.task("copy", function () {
 });
 
 gulp.task("minify", async function () {
-    gulp.src("source/js/*.js")
+    gulp.src("source/js/script.js")
         .pipe(uglify())
+        .pipe(rename("script.min.js"))
         .pipe(gulp.dest("build/js"));
 });
 
