@@ -16,6 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var gulp = require ("gulp");
 var del = require ("del");
+var uglify = require('gulp-uglify');
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -68,12 +69,17 @@ gulp.task("html", function () {
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/js/**",
       "source/*.ico"
     ], {
       base: "source"
     })
     .pipe(gulp.dest("build"));
+});
+
+gulp.task("minify", async function () {
+    gulp.src("source/js/*.js")
+        .pipe(uglify())
+        .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("clean", function () {
@@ -106,6 +112,7 @@ gulp.task("build", gulp.series(
   "images",
   "webp",
   "sprite",
+  "minify",
   "html"
 ));
 gulp.task("start", gulp.series("build", "server"));
