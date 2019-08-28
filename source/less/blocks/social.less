@@ -9,6 +9,7 @@
   display: block;
   margin-left: 18px;
   margin-right: 18px;
+  color: #221f1f;
 }
 
 .social__link--fb {
@@ -17,10 +18,12 @@
 
 .social__link:hover {
   fill: @decoration-2hov;
+  color: @decoration-2hov;
 }
 
 .social__link:active {
   fill: @fill-act;
+  color: @fill-act;
 }
 
 @media (min-width: 768px) {
@@ -29,7 +32,9 @@
     height: 24px;
   }
 
-  .social__link--fb {
+  .social__link--fb .social__icon {
     margin-top: 0;
+    width: 27px;
+    height: 27px;
   }
 }

@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>Мишка</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff2" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <script>
@@ -45,9 +49,9 @@
       </div>
     </header>
     <main class="main-page">
-      <div class="main-page__header-background h1-header__background">
+      <div class="main-page__header-background">
         <div class="main-page__header-wrapper">
-          <h1 class="h1-header main-page__header">Милые штуки ручной работы для дома</h1>
+          <h1 class="h1-header main-page__header">Милые штуки <span class="main-page__header-divider">ручной</span> работы для дома</h1>
           <p class="main-page__remark">Бесплатная доставка по России</p>
           <div class="categories">
             <h2 class="visually-hidden">Каталог товаров для дома</h2>
@@ -115,7 +119,7 @@
               Экологически чистые материалы
             </li>
             <li class="advantages__item advantages__item--scand">
-              <svg class="advantages__icon" width="46" height="40" aria-hidden="true" role="presentation"><use xlink:href="#icon-feature-money"></use></svg>
+              <svg class="advantages__icon advantages__icon--scand" width="46" height="40" aria-hidden="true" role="presentation"><use xlink:href="#icon-feature-money"></use></svg>
               Скандинавский стиль по Российской цене
             </li>
             <li class="advantages__item advantages__item--likes">
@@ -127,7 +131,7 @@
               Связано вручную с любовью и умилением
             </li>
             <li class="advantages__item advantages__item--rus">
-              <svg class="advantages__icon" width="46" height="40" aria-hidden="true" role="presentation"><use xlink:href="#icon-feature-rocket"></use></svg>
+              <svg class="advantages__icon advantages__icon--rus" width="46" height="40" aria-hidden="true" role="presentation"><use xlink:href="#icon-feature-rocket"></use></svg>
               Поддержка отечественного производителя
             </li>
             <li class="advantages__item advantages__item--present">
@@ -140,7 +144,7 @@
       <section class="feedback">
         <div class="feedback__wrapper">
           <h2 class="feedback__name">Отзывы </h2>
-          <div class="feedback__slider-wrapper slider__wrapper">
+          <div class="feedback__slider-wrapper slider">
             <ul class="feedback__list slider__list">
               <li class="feedback__item slider__item">
                 <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!

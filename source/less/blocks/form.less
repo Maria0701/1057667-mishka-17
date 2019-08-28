@@ -152,8 +152,10 @@
 
 .form__text:hover,
 .form-text:focus,
-.form__text:active {
+.form__text:active,
+.form__text:focus-within {
   border-bottom-color: @decoration-1-dark;
+  outline: none;
 }
 
 .form__textarea {
@@ -174,12 +176,14 @@
 .form__textarea:focus,
 .form__textarea:active {
   border-color: @decoration-1-dark;
+  outline: none;
 }
 
 .form__textarea:hover,
 .form__textarea:focus {
   &::placeholder {
     color: @form-texthov;
+    outline: none;
   }
 }
 
@@ -197,6 +201,7 @@
   width: 30px;
   height: 31px;
   fill: @form-icon;
+  color: @form-icon;
 }
 
 .form__inside-wrapper {
@@ -211,6 +216,7 @@
 .form__inside-wrapper--email:active {
   .form__icon {
     fill: @decoration-1-dark;
+    color: @decoration-1-dark;
   }
 }
 
